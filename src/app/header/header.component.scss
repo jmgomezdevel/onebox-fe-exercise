@@ -1,0 +1,16 @@
+@import '../app.component.scss';
+
+.container {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    height: 80px;
+    background-color: $header-background-color;
+    box-shadow: 2px 8px 10px $header-shadow;
+
+    p{
+        margin: 0;
+        font-size: 24px;
+    }
+}

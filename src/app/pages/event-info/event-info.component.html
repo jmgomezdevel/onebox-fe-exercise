@@ -1,0 +1,19 @@
+<div class="event-info-container">
+  <a routerLink="/">Volver</a>
+  <div class="events-container">
+    <app-event-sessions 
+    *ngIf="eventInfo$ | async as eventInfo; else noEventInfoFound"
+      class="event-sessions"
+      [eventInfo]="eventInfo"
+      (addSession)="addSession($event)"
+      (removeSession)="removeSession($event)"
+    ></app-event-sessions>
+    <app-shopping-cart class="shopping-cart-container"></app-shopping-cart>
+  </div>
+</div>
+
+<ng-template #noEventInfoFound>
+  <div class="no-events-found">
+    <span class="not-found-text">EVENT INFO NOT FOUND</span>
+  </div>
+</ng-template>

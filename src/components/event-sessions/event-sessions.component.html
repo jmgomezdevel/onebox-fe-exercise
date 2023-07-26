@@ -1,0 +1,18 @@
+<div *ngIf="eventInfo; else event_not_found">
+  <div *ngFor="let session of eventInfo.sessions | sortSessionsByDate: 'ASC'" class="session">
+    <span class="session-info"
+      ><span class="session-date" innerHTML="Fecha: {{ session.date | date:'dd/MM/yyyy'}}"></span>
+      <span class="separator">&comma;&nbsp;</span>
+      <span class="session-availability-left" innerHTML="Disponibilidad: {{ session.availability }}"></span
+    ></span>
+    <span class="session-picker"
+      ><a (click)="removeSessionClick(session)">-</a
+      ><span class="session-availability-right" innerHTML="{{ session.availability }}"></span
+      ><a (click)="addSessionClick(session)">+</a></span
+    >
+  </div>
+</div>
+
+<ng-template #event_not_found>
+  EVENT NOT FOUND
+</ng-template>

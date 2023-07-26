@@ -1,0 +1,11 @@
+<div class="catalog-container">
+    <div class="events-container" *ngIf="events$ | async as events">
+        <ng-container *ngFor="let event of events | sortEventsByEndDate: 'ASC'">
+            <app-event-card
+            class="event-card"
+            [event]="event"
+            (goEventInfo)="goEventInfo($event)"
+            ></app-event-card>
+        </ng-container>
+    </div>
+</div>

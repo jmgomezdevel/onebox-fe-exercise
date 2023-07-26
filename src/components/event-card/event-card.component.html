@@ -1,0 +1,6 @@
+<h4 class="title">{{event.title}}</h4>
+<p class="subtitle" innerHTML="{{event.subtitle}}"></p>
+<img class="image" src="{{event.image}}"/>
+<span class="dates"> {{event.startDate | date:'dd/MM/yyyy'}} - {{event.endDate | date:'dd/MM/yyyy'}}</span>
+<p class="description" innerHTML="{{event.description}}"></p>
+<button class="button"><a routerLink="/event/{{event.id}}">Comprar</a></button>

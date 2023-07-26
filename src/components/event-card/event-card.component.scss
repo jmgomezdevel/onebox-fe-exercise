@@ -1,0 +1,34 @@
+@import '../../app/app.component.scss';
+
+.title,
+.subtitle {
+    padding: 10px 10px;
+    margin: 0;
+    color: $text-color-blue;
+}
+
+.image {
+    width: 100%;
+}
+
+.description,
+.dates {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 25px;;
+    margin: 0;
+}
+
+.button {
+    border-radius: 0;
+    background-color: $button-background-color;
+    border: none;
+    padding: 10px;
+
+    a {
+        color: map-get($whites, 100);
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+    }
+}

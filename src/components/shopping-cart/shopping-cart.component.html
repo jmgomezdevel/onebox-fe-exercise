@@ -1,0 +1,15 @@
+<div *ngIf="products.length > 0; else emtpyCart" class="products">
+    <div class="product-container" *ngFor="let product of products">
+        <span class="product-title" innerHTML="{{product.event.title}}"></span>
+        <div class="product-sessions-container">
+            <div class="session-container" *ngFor="let sessionProduct of product.sessionsProduct">
+                <span class="session-date" innerHTML="{{sessionProduct.date | date:'dd/MM/yyyy'}}"></span>
+                <div class="remove-session-container"><span class="quantity">x{{sessionProduct.quantity}}</span> <img class="remove-picture" src="/assets/img/trash.png" alt="Detele session" (click)="deleteSession(product.event, sessionProduct.date)"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #emtpyCart>
+    <div class="emtpy-cart-container"><span>EMPTY CART</span></div>
+</ng-template>

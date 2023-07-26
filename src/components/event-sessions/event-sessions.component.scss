@@ -1,0 +1,53 @@
+@import "../../app/app.component.scss";
+
+.session {
+  display: grid;
+  grid-gap: 130px;
+  padding: 20px;
+  font-size: 20px;
+
+  @media (max-width: 450px) {
+    grid-gap: 80px;
+  }
+
+  .session-info {
+    grid-column: 1;
+    grid-row: 1;
+
+    @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .separator {
+            display: none;
+        }
+    }
+
+    .session-date {
+        white-space: nowrap;
+    }
+
+    .session-availability-left {
+        text-wrap: nowrap;
+    }
+  }
+
+  .session-picker {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+
+    a {
+      color: $text-color-blue;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .session-availability-right {
+      padding: 0 10px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../app.component.scss';
+
+.catalog-container {
+    display: grid;
+    justify-content: center;
+
+    .events-container {
+        display: grid;
+        grid-gap: 20px 30px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px;
+    
+        @media(max-width: 767px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .event-card {
+            max-width: 470px;
+            display: grid;
+            border: 1px solid map-get($whites, 200);
+            grid-template-rows: min-content min-content min-content min-content 1fr;
+        }
+    }
+}
