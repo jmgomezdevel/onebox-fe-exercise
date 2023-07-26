@@ -1,27 +1,55 @@
-# OneboxFeExercise
+# Portal de Venta de Tickets para Eventos - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+Este es un proyecto de Angular que consiste en un portal de venta de tickets para eventos, donde los usuarios pueden explorar y añadir entradas para diferentes eventos y espectáculos.
 
-## Development server
+## Requisitos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Asegúrate de tener las siguientes versiones instaladas en tu sistema:
 
-## Code scaffolding
+- Angular CLI: 16.1.5
+- Node: 18.16.0
+- Package Manager: npm 9.8.1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instrucciones de Ejecución
 
-## Build
+Para ejecutar este proyecto en tu entorno local, sigue los siguientes pasos:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clona este repositorio en tu máquina local utilizando el siguiente comando en tu terminal o consola de comandos:
 
-## Running unit tests
+```
+git clone https://github.com/jmgomezdevel/onebox-fe-exercise.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Abre una terminal y navega hasta la carpeta `onebox-fe-exercise` dentro del proyecto clonado.
 
-## Running end-to-end tests
+3. Ejecuta el siguiente comando para instalar las dependencias necesarias:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+npm install
+```
 
-## Further help
+4. Una vez finalizada la instalación de dependencias, procede a compilar el proyecto mediante el siguiente comando:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+ng build
+```
+
+5. Por último, inicia el servidor de desarrollo para visualizar el portal de venta de tickets. Ejecuta el siguiente comando:
+
+```
+ng serve
+```
+
+6. Ahora, abre tu navegador web y accede a la siguiente URL:
+
+```
+http://localhost:4200/
+```
+
+## Funcionalidades
+
+El portal de venta de tickets ofrece las siguientes funcionalidades:
+
+- Explorar eventos y espectáculos disponibles.
+- Ver detalles de los eventos, incluyendo información sobre la fecha y el número de tickets disponibles.
+- Añadir y eliminar tickets al carrito de compra.
