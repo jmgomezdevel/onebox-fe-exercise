@@ -1,4 +1,4 @@
-# Portal de Venta de Tickets para Eventos - Angular
+# Onebox Exercise - Portal de Venta de Tickets para Eventos - Angular
 
 Este es un proyecto de Angular que consiste en un portal de venta de tickets para eventos, donde los usuarios pueden explorar y añadir entradas para diferentes eventos y espectáculos.
 
